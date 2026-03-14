@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import Testimonials from "./sections/Testimonials";
 import Footer from "./sections/Footer";
 import Contact from "./sections/Contact";
@@ -21,6 +22,9 @@ const App = () => (
     {/* <Testimonials /> */}
     <Contact />
     <Footer />
+
+    {/* Vercel Analytics: tracks page views + events */}
+    <Analytics />
   </>
 );
 
